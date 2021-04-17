@@ -1,0 +1,10 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {},
+  "rules": {
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "trailing-comma": [false]
+  },
+  "rulesDirectory": []
+}

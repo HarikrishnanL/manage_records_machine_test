@@ -1,0 +1,37 @@
+{
+    "executionRoleArn": "arn:aws:iam::014507119512:role/stage-btf-be-ECS-1KK9WSYZ4RB7-ECSTaskExecutionRole-HR54PX4KKWVR",
+    "containerDefinitions": [
+        {
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "stage-btf-be-PortalAndStoresService-LY0QRTTPT48W",
+                    "awslogs-region": "ap-south-1",
+                    "awslogs-stream-prefix": "stage-btf-be-PortalAndStoresService-LY0QRTTPT48W"
+                }
+            },
+            "portMappings": [
+                {
+                    "hostPort": 8001,
+                    "protocol": "tcp",
+                    "containerPort": 8001
+                }
+            ],
+            "cpu": 256,
+            "memory": 512,
+            "memoryReservation": 512,
+            "image": "014507119512.dkr.ecr.ap-south-1.amazonaws.com/stage-btf-ecr-portal-stores:latest",
+            "name": "portal_stores-service"
+        }
+    ],
+    "placementConstraints": [],
+    "taskRoleArn": "arn:aws:iam::014507119512:role/stage-btf-be-ECS-1KK9WSYZ4RB7M-ECSServiceTaskRole-QMCUY6V67UU0",
+    "family": "portal_stores-service",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "networkMode": "awsvpc",
+    "cpu": "512",
+    "memory": "1024",
+    "volumes": []
+}
